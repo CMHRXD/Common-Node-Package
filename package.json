@@ -1,0 +1,12 @@
+{
+  "name": "@cmhrtools/common",
+  "version": "1.0.0",
+  "description": "common code for ticketing app",
+  "main": "index.js",
+  "scripts": {
+    "test": ""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
