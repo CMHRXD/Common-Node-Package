@@ -1,6 +1,6 @@
 {
   "name": "@cmhrtools/common",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "common code for ticketing app",
   "main": "index.js",
   "files": [
