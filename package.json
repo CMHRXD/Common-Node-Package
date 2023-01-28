@@ -3,10 +3,19 @@
   "version": "1.0.0",
   "description": "common code for ticketing app",
   "main": "index.js",
+  "files": [
+    "build/**/*"
+  ],
   "scripts": {
-    "test": ""
+    "clean": "del-cli dist",
+    "build": "npm run clean && tsc",
+    "publish": "npm version patch && npm run build && npm publish"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "del-cli": "^5.0.0",
+    "typescript": "^4.9.4"
+  }
 }
