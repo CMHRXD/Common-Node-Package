@@ -22,8 +22,11 @@ export const tokenMiddleware = (req: Request, res: Response, next: NextFunction)
         next();
     }
     const token = req.session?.token;
+    console.log('session: ', req.session)
+    console.log('token: ', token)
     try {
         const payload = decodeToken(token) as userPayload;
+        console.log('payload: ', token)
         req.currentUser = payload;
     } catch (error) {
         console.log(error)
