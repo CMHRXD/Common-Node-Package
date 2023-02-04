@@ -21,14 +21,13 @@ export const tokenMiddleware = (req: Request, res: Response, next: NextFunction)
     if (!req.session?.token) {
         next();
     }
-    const token = req.session?.token || req.headers.cookie;
-    console.log(req.headers.cookie)
-    console.log('token: ', token)
+    const token = req.session?.token
+    //console.log('token: ', token)
     try {
         const payload = decodeToken(token) as userPayload;
-        console.log('payload: ', payload)
+        //console.log('payload: ', payload)
         req.currentUser = payload;
-        console.log('user: ', req.currentUser)
+        //console.log('user: ', req.currentUser)
     } catch (error) {
         console.log(error)
     }

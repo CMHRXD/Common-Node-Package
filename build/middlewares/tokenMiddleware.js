@@ -8,14 +8,13 @@ const tokenMiddleware = (req, res, next) => {
     if (!((_a = req.session) === null || _a === void 0 ? void 0 : _a.token)) {
         next();
     }
-    const token = ((_b = req.session) === null || _b === void 0 ? void 0 : _b.token) || req.headers.cookie;
-    console.log(req.headers.cookie);
-    console.log('token: ', token);
+    const token = (_b = req.session) === null || _b === void 0 ? void 0 : _b.token;
+    //console.log('token: ', token)
     try {
         const payload = (0, JWT_Decode_1.decodeToken)(token);
-        console.log('payload: ', payload);
+        //console.log('payload: ', payload)
         req.currentUser = payload;
-        console.log('user: ', req.currentUser);
+        //console.log('user: ', req.currentUser)
     }
     catch (error) {
         console.log(error);
