@@ -22,6 +22,7 @@ export const tokenMiddleware = (req: Request, res: Response, next: NextFunction)
         next();
     }
     const token = req.session?.token;
+    console.log(req)
     console.log('session: ', req.session)
     console.log('token: ', token)
     try {
