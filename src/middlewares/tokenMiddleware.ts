@@ -3,8 +3,8 @@ import { NextFunction, Request, Response } from "express";
 import { decodeToken } from "../helpers/JWT_Decode";
 
 interface userPayload {
-    id: String;
-    email: String;
+    id: string;
+    email: string;
 }
 
 // To create a new property in the Request interface or update an existing one,
