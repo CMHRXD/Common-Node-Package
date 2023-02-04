@@ -8,9 +8,8 @@ const tokenMiddleware = (req, res, next) => {
     if (!((_a = req.session) === null || _a === void 0 ? void 0 : _a.token)) {
         next();
     }
-    const token = (_b = req.session) === null || _b === void 0 ? void 0 : _b.token;
+    const token = ((_b = req.session) === null || _b === void 0 ? void 0 : _b.token) || req.headers.cookie;
     console.log(req.headers.cookie);
-    console.log('session: ', req.session);
     console.log('token: ', token);
     try {
         const payload = (0, JWT_Decode_1.decodeToken)(token);
