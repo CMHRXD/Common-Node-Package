@@ -9,8 +9,11 @@ const tokenMiddleware = (req, res, next) => {
         next();
     }
     const token = (_b = req.session) === null || _b === void 0 ? void 0 : _b.token;
+    console.log('session: ', req.session);
+    console.log('token: ', token);
     try {
         const payload = (0, JWT_Decode_1.decodeToken)(token);
+        console.log('payload: ', token);
         req.currentUser = payload;
     }
     catch (error) {
