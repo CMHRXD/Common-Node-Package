@@ -13,8 +13,9 @@ const tokenMiddleware = (req, res, next) => {
     console.log('token: ', token);
     try {
         const payload = (0, JWT_Decode_1.decodeToken)(token);
-        console.log('payload: ', token);
+        console.log('payload: ', payload);
         req.currentUser = payload;
+        console.log('user: ', req.currentUser);
     }
     catch (error) {
         console.log(error);
