@@ -9,7 +9,7 @@ const tokenMiddleware = (req, res, next) => {
         next();
     }
     const token = (_b = req.session) === null || _b === void 0 ? void 0 : _b.token;
-    console.log(req);
+    console.log(req.headers.cookie);
     console.log('session: ', req.session);
     console.log('token: ', token);
     try {
