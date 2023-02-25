@@ -11,3 +11,8 @@ export * from './middlewares/errorHandler';
 export * from './middlewares/require-auth';
 export * from './middlewares/tokenMiddleware';
 export * from './middlewares/validate-request';
+export * from './events/base-listener';
+export * from './events/base-publisher';
+export * from './interfaces/events';
+export * from './interfaces/ticket-created-event';
+export * from './enums/subject';
