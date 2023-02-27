@@ -24,6 +24,7 @@ export * from './events/base-publisher'
 //Events Interfaces
 export * from './interfaces/events'
 export * from './interfaces/ticket-created-event'
+export * from './interfaces/ticket-updated-event'
 
 //Enums
-export * from './enums/subject'
+export * from './enums/subjects'
