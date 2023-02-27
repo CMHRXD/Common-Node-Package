@@ -15,4 +15,5 @@ export * from './events/base-listener';
 export * from './events/base-publisher';
 export * from './interfaces/events';
 export * from './interfaces/ticket-created-event';
-export * from './enums/subject';
+export * from './interfaces/ticket-updated-event';
+export * from './enums/subjects';
