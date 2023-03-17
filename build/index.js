@@ -39,3 +39,4 @@ __exportStar(require("./interfaces/ticket-created-event"), exports);
 __exportStar(require("./interfaces/ticket-updated-event"), exports);
 //Enums
 __exportStar(require("./enums/subjects"), exports);
+__exportStar(require("./enums/status"), exports);

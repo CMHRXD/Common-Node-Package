@@ -17,3 +17,4 @@ export * from './interfaces/events';
 export * from './interfaces/ticket-created-event';
 export * from './interfaces/ticket-updated-event';
 export * from './enums/subjects';
+export * from './enums/status';

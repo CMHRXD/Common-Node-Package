@@ -28,3 +28,4 @@ export * from './interfaces/ticket-updated-event'
 
 //Enums
 export * from './enums/subjects'
+export * from './enums/status'
