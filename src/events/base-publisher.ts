@@ -3,7 +3,7 @@ import { Events } from "../interfaces/events";
 
 export abstract class BasePublishier<T extends Events> {
   abstract subject: T["subject"]; // This is the subject name that we want to listen to.
-  private client: Stan; // This is the client that we want to use to connect to NATS.
+  protected client: Stan; // This is the client that we want to use to connect to NATS.
 
   constructor(client: Stan) {
     this.client = client;

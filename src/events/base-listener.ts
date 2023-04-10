@@ -6,7 +6,7 @@ export abstract class Listener<T extends Events> {
   abstract subject: T["subject"]; // This is the subject name that we want to listen to.
   abstract queueGroupName: string; // This is the queue group name that we want to use.
   abstract onMessage(data: T["data"], msg: Message): void; // this function is called when a message is received.
-  private client: Stan; // This is the client that we want to use to connect to NATS.
+  protected client: Stan; // This is the client that we want to use to connect to NATS.
   protected ackWait = 5 * 1000; // This is the time that we want to wait for an acknowledgement from NATS.
 
   constructor(client: Stan) {
