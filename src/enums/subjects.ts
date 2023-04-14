@@ -2,9 +2,12 @@
 export enum Subjects { // This is the list of subjects that we want to use.
     TicketCreated = 'ticket:created',
     TicketUpdated = 'ticket:updated',
+
     OrderCreated = 'order:created',
     OrderUpdated = "order:updated",
     OrderCancelled = "order:cancelled",
+
+    ExpirationComplete = "expiration:complete",
 }
 
  

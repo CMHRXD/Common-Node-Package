@@ -39,6 +39,7 @@ __exportStar(require("./interfaces/ticket-created-event"), exports);
 __exportStar(require("./interfaces/ticket-updated-event"), exports);
 __exportStar(require("./interfaces/order-created-event"), exports);
 __exportStar(require("./interfaces/order-cancelled-event"), exports);
+__exportStar(require("./interfaces/expiration-complete-event"), exports);
 //Enums
 __exportStar(require("./enums/subjects"), exports);
 __exportStar(require("./enums/status"), exports);
