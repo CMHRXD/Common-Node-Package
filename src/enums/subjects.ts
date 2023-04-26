@@ -8,6 +8,8 @@ export enum Subjects { // This is the list of subjects that we want to use.
     OrderCancelled = "order:cancelled",
 
     ExpirationComplete = "expiration:complete",
+
+    PaymentCreated = "payment:created"
 }
 
  
