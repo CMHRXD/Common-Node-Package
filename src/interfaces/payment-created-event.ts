@@ -1,6 +1,7 @@
+import { Subjects } from "../enums/subjects";
 
 export interface PaymentCreatedEvent {
-    subject: string;
+    subject: Subjects.PaymentCreated;
     data: {
         id: string;
         orderId: string;
